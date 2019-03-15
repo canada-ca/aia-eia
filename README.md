@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/canada-ca/aia-eia.svg?branch=master)](https://travis-ci.org/canada-ca/aia-eia/)
+[![Build Status](https://travis-ci.com/canada-ca/aia-eia.svg?branch=master)](https://travis-ci.com/canada-ca/aia-eia/)
 
 ([Français](#gabarit-pour-dépôts-de-code-source-ouvert-du-gouvernement-du-canada))
 
