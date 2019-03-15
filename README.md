@@ -2,7 +2,7 @@
 
 ([Français](#gabarit-pour-dépôts-de-code-source-ouvert-du-gouvernement-du-canada))
 
-## Algorithmic Impact Assessment
+# Algorithmic Impact Assessment
 
 This project will host the next iteration of the Algorithmic Impact Assessment (AIA). It will consist in two main capabilities:
 
@@ -15,11 +15,11 @@ The users of this project will be Government of Canada employees assessing the i
 
 As this assessment tool is open source, other countries and individiuals may wish to also leverage it and even contribute back to it.
 
-### How to Contribute
+## How to Contribute
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
 
-### License
+## License
 
 Unless otherwise noted, the source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT License](LICENSE).
 
@@ -27,7 +27,7 @@ The Canada wordmark and related graphics associated with this distribution are p
 
 ______________________
 
-## Évaluation de l'incidence algorithmique
+# Évaluation de l'incidence algorithmique
 
 Ce projet accueillera la prochaine itération de l'étude d'impact algorithmique (EIA). Il se composera de deux capacités principales :
 
@@ -40,11 +40,11 @@ Les utilisateurs de ce projet seront des employés du gouvernement du Canada qui
 
 Comme cet outil d'évaluation est publié sous une licence libre, d'autres pays et individus peuvent souhaiter l'utiliser également et même y contribuer.
 
-### Comment contribuer
+## Comment contribuer
 
 Voir [CONTRIBUTING.md](CONTRIBUTING.md)
 
-### Licence
+## Licence
 
 Sauf indication contraire, le code source de ce projet est protégé par le droit d'auteur de la Couronne du gouvernement du Canada et distribué sous la [licence MIT](LICENSE).
 
