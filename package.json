@@ -1,6 +1,4 @@
 {
-  "name": "aia-eia",
-  "version": "0.1",
   "scripts": {
     "lint": "markdownlint -i node_modules \"**/*.md\"",
     "test": "npm run lint"
