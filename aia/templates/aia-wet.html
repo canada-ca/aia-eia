@@ -1,0 +1,105 @@
+{% extends "base-cdts.html" %}
+{% load i18n %}
+{% load static %}
+{% load humanize %}
+{% load search_extras %}
+{% load survey_extras %}
+
+{% block canada_ca_search %} {% endblock canada_ca_search %}
+{% block language_switch_url %}/{{ LANGUAGE_CODE | SwapLangCode }}/od{% endblock language_switch_url %}
+
+{% block custom_page_javascript %}{% endblock custom_page_javascript %}
+
+{% block top-settings %}
+    "lngLinks": [{
+        "lang": "{{ LANGUAGE_CODE | SwapLangCode }}",
+        "href": "/{{ LANGUAGE_CODE | SwapLangCode }}/od",
+        "text": "{{ LANGUAGE_CODE | SwapLangName }}"
+    }],
+    search: false,
+    "breadcrumbs": [{
+        "title": "{% trans 'Home' %}",
+        "href": "https://www.canada.ca/{{ LANGUAGE_CODE }}.html",
+    },{
+        "title": "{% trans 'Open Government' %}",
+        "href": "{% trans 'https://open.canada.ca' %}/{{ LANGUAGE_CODE }}",
+    }]
+{% endblock %}
+
+{% block main-content %}
+{% block main-content-title %}
+<h1 property="name" id="wb-cont">{% trans survey.name %}</h1>
+{% endblock %}
+    <section>
+        <div class="survey-description"> {{ survey.description|safe }} </div>
+        <div class="survey-description"> {{ survey.description|safe }} </div>
+        <div>
+            <form action="{% url 'survey-detail' id=survey.id %}" method="post">
+                {% csrf_token %}
+                {% for category in categories %}
+                    <h3> {{ category }} </h3>
+                    <p> {{ category.description }} </p>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="category-container">
+
+                                <div class="panel-body">
+                                    {% include "survey/question.html" %}
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                {% empty %}
+                    <h3> {% trans "Questions" %} </h3>
+                    {% include "survey/question.html" %}
+                {% endfor %}
+
+                <br>
+
+                <input
+                        class="btn btn-default btn-lg"
+                        type="submit"
+                        value="{% trans "Submit" %}"
+                >
+            </form>
+        </div>
+
+    </section>
+{% endblock %}
+
+{% block pre-footer-settings %}
+    showPostContent: false,
+    showFeedback: false,
+    showShare: false
+{% endblock %}
+
+{% block footer-settings %}
+"footerSections": [{
+    "href": "{% trans '/en/forms/contact-us' %}",
+    "text": "{% trans 'Open Government Contact' %}"
+},{
+    "href": "{% trans 'https://www.canada.ca/en/government/dept.html' %}",
+    "text": "{% trans 'Departments and agencies' %}"
+},{
+    "href": "{% trans 'https://www.canada.ca/en/government/publicservice.html' %}",
+    "text": "{% trans 'Public service and military' %}"
+},{
+    "href": "{% trans 'http://news.gc.ca/' %}",
+    "text": "{% trans 'News' %}"
+},{
+    "href": "{% trans 'https://www.canada.ca/en/government/system/laws.html' %}",
+    "text": "{% trans 'Treaties, laws and regulations' %}"
+},{
+    "href": "{% trans 'https://www.canada.ca/en/transparency/reporting.html' %}",
+    "text": "{% trans 'Government-wide reporting' %}"
+},{
+    "href": "{% trans '/en/user' %}",
+    "text": "{% trans 'Open Government Log In' %}"
+},{
+    "href": "{% trans 'https://www.canada.ca/en/government/system.html' %}",
+    "text": "{% trans 'How government works' %}"
+}],
+"showFeatures": false
+{% endblock %}
+{% block custom-jquery %}{% endblock %}

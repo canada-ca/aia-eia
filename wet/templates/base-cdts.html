@@ -1,0 +1,117 @@
+{% load static %}
+{% load i18n %}
+{% load search_extras %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+            wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+    <title>{% block page_title %}{% trans 'Open Government' %}{% endblock page_title %}</title>
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- Meta data -->
+    <meta name="description"
+          content="">
+        <!-- Meta data-->
+        <!-- Load closure template scripts -->
+
+        <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/cdts/compiled/soyutils.js"></script>
+        <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/cdts/compiled/wet-{{ LANGUAGE_CODE }}.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+
+        <noscript>
+            <!-- Write closure fall-back static file -->
+            <!-- {% static 'refTop.html' %}-->
+                    <!--[if gte IE 9 | !IE ]><!-->
+        <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/assets/favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/css/theme.min.css">
+        <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/cdts/cdtsfixes.css">
+        <!-- Are you using the application templates? If so add the following CSS file -->
+        <!-- <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/cdts/cdtsapps.css">-->
+        <!--<![endif]-->
+        <!--[if lt IE 9]>
+        <link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/assets/favicon.ico" rel="shortcut icon" />
+        <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/css/ie8-theme.min.css" />
+        <![endif]-->
+        <!--[if lte IE 9]><![endif]-->
+        <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/css/noscript.min.css" />
+        <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/{{ cdts_version }}/cdts/cdtsnoscript.css" />
+        </noscript>
+        <!-- Write closure template -->
+        <script>
+            document.write(wet.builder.refTop({
+            }));
+        </script>
+        {% block custom_page_javascript %}{% endblock custom_page_javascript %}
+        <style>
+            mark.highlight {background-color: yellow;font-weight: bold;}
+        </style>
+</head>
+<body class="home" vocab="http://schema.org/" typeof="WebPage">
+    <div id="def-top">
+		<!-- Write closure fall-back static file -->
+        {% if LANGUAGE_CODE == 'fr' %}
+        {% include 'cdts/top-fr.html' %}
+        {% else %}
+        {% include 'cdts/top-en.html' %}
+        {% endif %}
+        <!-- Write closure template -->
+        <script>
+            var defTop = document.getElementById("def-top");
+            defTop.outerHTML = wet.builder.top({
+            {% block top-settings %}
+            {% endblock %}
+            });
+        </script>
+    </div>
+<main role="main" property="mainContentOfPage" class="container">
+    {% block main-content %}{% endblock %}
+    {% block pre-footer %}
+    <div id="def-preFooter">
+    <!-- Write closure fall-back static file -->
+        {% if LANGUAGE_CODE == 'fr' %}
+        {% include 'cdts/preFooter-fr.html' %}
+        {% else %}
+        {% include 'cdts/preFooter-en.html' %}
+        {% endif %}
+    <!-- Write closure template -->
+    </div>
+    <script>
+        var defPreFooter = document.getElementById("def-preFooter");
+        defPreFooter.outerHTML = wet.builder.preFooter({
+        {% block pre-footer-settings %}
+        {% endblock %}
+        });
+	</script>
+    {% endblock %}
+</main>
+
+{% block footer %}
+<div id="def-footer">
+    <!-- Write closure fall-back static file -->
+    {% if LANGUAGE_CODE == 'fr' %}
+    {% include 'cdts/footer-fr.html' %}
+    {% else %}
+    {% include 'cdts/footer-en.html' %}
+    {% endif %}
+</div>
+<!-- Write closure template -->
+<script>
+    var defFooter = document.getElementById("def-footer");
+    defFooter.outerHTML = wet.builder.appFooter({
+    {% block footer-settings %}{% endblock %}
+    });
+</script>
+<!-- Write closure template -->
+<script>
+    document.write(wet.builder.refFooter({
+    }));
+</script>
+{% endblock %}
+{% block custom-jquery %}{% endblock %}
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-03-17 19:52-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\aia\templates\aia-wet.html:21 .\wet\templates\404.html:17
+msgid "Home"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:24 .\wet\templates\404.html:20
+#: .\wet\templates\base-cdts.html:12 .\wet\templates\base.html:13
+msgid "Open Government"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:25 .\wet\templates\404.html:21
+msgid "https://open.canada.ca"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:54
+msgid "Questions"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:63
+msgid "Submit"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:79 .\wet\templates\404.html:47
+msgid "/en/forms/contact-us"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:80 .\wet\templates\404.html:48
+msgid "Open Government Contact"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:82 .\wet\templates\404.html:50
+msgid "https://www.canada.ca/en/government/dept.html"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:83 .\wet\templates\404.html:51
+msgid "Departments and agencies"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:85 .\wet\templates\404.html:53
+msgid "https://www.canada.ca/en/government/publicservice.html"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:86 .\wet\templates\404.html:54
+msgid "Public service and military"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:88 .\wet\templates\404.html:56
+msgid "http://news.gc.ca/"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:89 .\wet\templates\404.html:57
+msgid "News"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:91 .\wet\templates\404.html:59
+msgid "https://www.canada.ca/en/government/system/laws.html"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:92 .\wet\templates\404.html:60
+msgid "Treaties, laws and regulations"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:94 .\wet\templates\404.html:62
+msgid "https://www.canada.ca/en/transparency/reporting.html"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:95 .\wet\templates\404.html:63
+msgid "Government-wide reporting"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:97 .\wet\templates\404.html:65
+msgid "/en/user"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:98 .\wet\templates\404.html:66
+msgid "Open Government Log In"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:100 .\wet\templates\404.html:68
+msgid "https://www.canada.ca/en/government/system.html"
+msgstr ""
+
+#: .\aia\templates\aia-wet.html:101 .\wet\templates\404.html:69
+msgid "How government works"
+msgstr ""
+
+#: .\wet\templates\404.html:31
+msgid "We couldn't find that Web page"
+msgstr ""
+
+#: .\wet\templates\404.html:32
+msgid "Error 404"
+msgstr ""
+
+#: .\wet\templates\404.html:33
+msgid ""
+"We're sorry you ended up here. Sometimes a page gets moved or deleted, but "
+"hopefully we can help you find what you're looking for. Return to the <a "
+"href=\\"
+msgstr ""
+
+#: .\wet\templates\base.html:58
+msgid "Skip to main content"
+msgstr ""
+
+#: .\wet\templates\base.html:61
+msgid "Skip to \"About government\""
+msgstr ""
+
+#: .\wet\templates\base.html:67
+msgid "Language selection"
+msgstr ""
+
+#: .\wet\templates\base.html:84 .\wet\templates\base.html:86
+#: .\wet\templates\base.html:89
+msgid "Search and menus"
+msgstr ""
+
+#: .\wet\templates\base.html:99
+msgid "Search website"
+msgstr ""
+
+#: .\wet\templates\base.html:103 .\wet\templates\base.html:112
+msgid "Search"
+msgstr ""
+
+#: .\wet\templates\base.html:147
+msgid ""
+"\n"
+"    <nav role=\"navigation\" class=\"container wb-navcurr\">\n"
+"        <h2 class=\"wb-inv\">About government</h2>\n"
+"        <ul class=\"list-unstyled colcount-sm-2 colcount-md-3\">\n"
+"            <li><a href=\"https://www.canada.ca/en/contact.html\">Contact "
+"us</a></li>\n"
+"            <li><a href=\"https://www.canada.ca/en/government/dept.html"
+"\">Departments and agencies</a></li>\n"
+"            <li><a href=\"https://www.canada.ca/en/government/publicservice."
+"html\">Public service and military</a></li>\n"
+"            <li><a href=\"https://www.canada.ca/en/news.html\">News</a></"
+"li>\n"
+"            <li><a href=\"https://www.canada.ca/en/government/system/laws."
+"html\">Treaties, laws and regulations</a></li>\n"
+"            <li><a href=\"https://www.canada.ca/en/transparency/reporting."
+"html\">Government-wide reporting</a></li>\n"
+"            <li><a href=\"http://pm.gc.ca/eng\">Prime Minister</a></li>\n"
+"            <li><a href=\"https://www.canada.ca/en/government/system.html"
+"\">How government works</a></li>\n"
+"            <li><a href=\"http://open.canada.ca/en/\">Open government</a></"
+"li>\n"
+"        </ul>\n"
+"    </nav>\n"
+"    <div class=\"brand\">\n"
+"        <div class=\"container\">\n"
+"            <div class=\"row\">\n"
+"                <nav class=\"col-md-9 col-lg-10 ftr-urlt-lnk\">\n"
+"                    <h2 class=\"wb-inv\">About this site</h2>\n"
+"                    <ul>\n"
+"                        <li><a href=\"https://www.canada.ca/en/social.html"
+"\">Social media</a></li>\n"
+"                        <li><a href=\"https://www.canada.ca/en/mobile.html"
+"\">Mobile applications</a></li>\n"
+"                        <li><a href=\"https://www1.canada.ca/en/newsite.html"
+"\">About Canada.ca</a></li>\n"
+"                        <li><a href=\"https://www.canada.ca/en/transparency/"
+"terms.html\">Terms and conditions</a></li>\n"
+"                        <li><a href=\"https://www.canada.ca/en/transparency/"
+"privacy.html\">Privacy</a></li>\n"
+"                    </ul>\n"
+"                </nav>\n"
+"                <div class=\"col-xs-6 visible-sm visible-xs tofpg\">\n"
+"                    <a href=\"#wb-cont\">Top of Page <span class=\"glyphicon "
+"glyphicon-chevron-up\"></span></a>\n"
+"                </div>\n"
+"                <div class=\"col-xs-6 col-md-3 col-lg-2 text-right\">\n"
+"                    <img src=\"/static/GCWeb/assets/wmms-blk.svg\" alt="
+"\"Symbol of the Government of Canada\">\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+msgstr ""
+
+#: .\wet\templatetags\search_extras.py:37
+msgid "There are no filters for this search"
+msgstr ""
