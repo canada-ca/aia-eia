@@ -15,6 +15,10 @@ The users of this project will be Government of Canada employees assessing the i
 
 As this assessment tool is open source, other countries and individiuals may wish to also leverage it and even contribute back to it.
 
+## Getting Started
+
+See the [Wiki](../../wiki)
+
 ## How to Contribute
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -39,6 +43,10 @@ L'EAI est un élément essentiel de la [Directive sur la prise de décision auto
 Les utilisateurs de ce projet seront des employés du gouvernement du Canada qui évalueront l'incidence de l'utilisation d'un système automatisé de décision, y compris l'intelligence artificielle, dans le cadre de leurs programmes et services.
 
 Comme cet outil d'évaluation est publié sous une licence libre, d'autres pays et individus peuvent souhaiter l'utiliser également et même y contribuer.
+
+## Comment utiliser
+
+Voir le [wiki](../../wiki)
 
 ## Comment contribuer
 
