@@ -92,26 +92,26 @@ DATABASES = {
     }
 }
 
-logging.config.dictConfig({
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': 'C:/Users/Public/ogc_aia/log/ogc_aia.log',
-        },
-    },
-    'loggers': {
-        'ogc_search': {
-            'handlers': ['file'],
-            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
-        },
-    },
-})
+# logging.config.dictConfig({
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#         },
+#         'file': {
+#             'level': 'INFO',
+#             'class': 'logging.FileHandler',
+#             'filename': 'C:/Users/Public/ogc_aia/log/ogc_aia.log',
+#         },
+#     },
+#     'loggers': {
+#         'ogc_search': {
+#             'handlers': ['file'],
+#             'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+#         },
+#     },
+# })
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
